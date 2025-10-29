@@ -1,0 +1,170 @@
+@import url(https://db.onlinewebfonts.com/c/745c796d8a8ed3c0b37cca41f029ca4d?family=FC);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, .filter {
+    height: 50vh;
+}
+
+header {
+    width: 100%;
+    color: #747171;
+    background: no-repeat;
+    background-image: url('../img/banner-1.webp');
+    background-size: 100% 100%;
+}
+
+.filter {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw;
+}
+
+header h1 {
+    font-size: clamp(1.5em, 1.5em + 2vw, 4.5em);
+}
+
+header p {
+    color: #000000;
+    font-size: clamp(1em, 1em + 1vw, 2.5em);
+    background-color: rgba(126, 126, 126, 0.636);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'FC';
+}
+
+form {
+    margin: 50px 10vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 2px solid #333333;
+    border-radius: 6px;
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #4f4f4f;
+    background-image: url('../img/Santos_Logo.png');
+    background-size: 15vw 15vw;
+    filter: opacity(0.25);
+    z-index: -1;
+}
+
+form h2 {
+    align-self: center;
+    font-size: clamp(1em, 1em + 1vw, 2em);
+}
+
+label {
+    font-size: clamp(1em, 1em + 1vw, 1.7em);
+    margin-left: 20px;
+}
+
+.box-text {
+    padding: 30px 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.box-text label {
+    margin: 0;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #333333;
+    margin: 10px 0;
+}
+
+.box-radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 4vw;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.box-radio p {
+    font-size: clamp(1em, 1em + 1vw, 1.7em);
+}
+
+.box-option {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 30px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.box-option select {
+    font-size: clamp(0.8em, 0.8em + 1vw, 1.3em);
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.button-container button {
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.button-container button:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    background-color: rgb(255, 255, 72);
+}
+
+footer p{
+    font-size: clamp(0.8em, 0.8em + 1vw, 1.7em);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}

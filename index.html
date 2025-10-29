@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Torcedor</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="filter">
+            <h1>Cadastro do Torcedor</h1>
+            <p>VAI PRA CIMA DELES, SANTOS!!!!</p>
+        </div>
+
+    </header>
+    <form action="" method="get">
+        <h2>Dados do Torcedor</h2>
+        <div class="box-text">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" placeholder="*Nome completo" required>
+        </div>
+        <div class="box-text">
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf" placeholder="*CPF" required>
+        </div>
+
+        <div class="box-radio">
+            <p>Quantas vezes?</p>
+            <div>
+                <input type="radio" name="select" id="rare" value="Raramente">
+                <label for="rare">Raramente</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="few" value="Pouco">
+                <label for="few">Pouco</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="many" value="Muito">
+                <label for="many">Muito</label>
+            </div>
+            <div>
+                <input type="radio" name="select" id="frequently" value="Frequentemente">
+                <label for="frequently">Frequentemente</label>
+            </div>
+        </div>
+
+        <div class="box-radio">
+            <div>
+                <input type="checkbox" name="fan" id="fan">
+                <label for="fan">Sou socio torcedor</label>
+            </div>
+            <div>
+                <input type="checkbox" name="oficialshirt" id="oficialshirt">
+                <label for="oficialshirt">Possuo camisa oficial</label>
+            </div>
+
+        </div>
+
+        <div class="box-option">
+            <select id="clubs" name="clubs" required>
+                <option value="none">Selecione uma opção</option>
+                <option value="Santos">Santos</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Cruzeiro">Cruzeiro</option>
+                <option value="Mirassol">Mirassol</option>
+                <option value="Fluminense">Fluminense</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Vasco">Vasco da Gama</option>
+                <option value="BotaFogo">Bota Fogo</option>
+                <option value="EC Vitoria">EC Vitória</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Grêmio">Grêmio</option>
+                <option value="Internacional">Internacional</option>
+                <option value="Atlético Mineiro">Atlético Mineiro</option>
+                <option value="Sport Recife">Sport Recife</option>
+                <option value="Ceará SC">Ceará SC</option>
+                <option value="Bragantino">Bragantino</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="Juventude">Juventude</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+            <button id="btn-send">ENVIAR</button>
+            <button id="btn-clean">LIMPAR</button>
+        </div>
+    </form>
+
+    <footer>
+        <p><strong>Desenvolvido por: </strong>Luis Henrique e Vebeke Mério Hanashiro</p>
+    </footer>
+</body>
+
+</html>
